@@ -5,11 +5,11 @@
     <form action="" class="formulario">
         <div class="formulario__campo">
             <label for="email" class="formulario__label">Email</label>
-            <input type="email" class="formulario_input" placeholder="Tu Email" id="email">
+            <input type="email" class="formulario__input" placeholder="Tu Email" id="email">
         </div>
         <div class="formulario__campo">
             <label for="password" class="formulario__label">Contraseña</label>
-            <input type="password" class="formulario_input" placeholder="Tu Contraseña" id="password">
+            <input type="password" class="formulario__input" placeholder="Tu Contraseña" id="password">
         </div>
 
         <input type="submit" class="formulario__submit" value="Iniciar Sesión">
