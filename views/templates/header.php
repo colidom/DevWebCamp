@@ -1,8 +1,8 @@
 <header class="header">
     <div class="header__contenedor">
         <nav class="header__navegacion">
-            <a href="/registro" class="" header__registro>Registrarse</a>
-            <a href="/login" class="" header__registro>Iniciar sesión</a>
+            <a href="/registro" class="header__enlace">Registrarse</a>
+            <a href="/login" class="header__enlace">Iniciar sesión</a>
         </nav>
 
         <div class="header__contenido">
