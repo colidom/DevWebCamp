@@ -9,7 +9,7 @@
         </div>
         <div class="formulario__campo">
             <label for="password" class="formulario__label">Contraseña</label>
-            <input type="password" class="formulario__input" placeholder="Tu Contraseña" id="password">
+            <input type="password" class="formulario__input" placeholder="Tu Contraseña" id="password" name="password">
         </div>
 
         <input type="submit" class="formulario__submit" value="Iniciar Sesión">
