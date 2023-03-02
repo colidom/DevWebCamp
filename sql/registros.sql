@@ -4,6 +4,7 @@ CREATE TABLE `registros` (
   `pago_id` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
   `token` varchar(8) DEFAULT NULL,
   `usuario_id` int DEFAULT NULL,
+  `regalo_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `usuarioId` (`usuario_id`),
   KEY `paquete_id` (`paquete_id`),
