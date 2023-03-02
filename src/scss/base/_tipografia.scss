@@ -3,7 +3,7 @@
 
 h1, h2, h3 {
     @include m.headings;
-    }
+}
 
 h1 {
     font-size: 4rem;
@@ -20,4 +20,7 @@ h3 {
 
 [class$="__heading"] {
     @include m.nombre-pagina;
+}
+[class$="__descripcion"] {
+    @include m.descripcion-pagina;
 }

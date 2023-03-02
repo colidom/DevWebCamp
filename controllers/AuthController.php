@@ -11,6 +11,7 @@ class AuthController {
 
         $alertas = [];
 
+
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
     
             $usuario = new Usuario($_POST);
@@ -33,6 +34,13 @@ class AuthController {
                         $_SESSION['apellido'] = $usuario->apellido;
                         $_SESSION['email'] = $usuario->email;
                         $_SESSION['admin'] = $usuario->admin ?? null;
+
+                        // Redirección 
+                        if($usuario->admin) {
+                            header('Location: /admin/dashboard');
+                        } else {
+                            header('Location: /finalizar-registro');
+                        }
                         
                     } else {
                         Usuario::setAlerta('error', 'Password Incorrecto');
@@ -102,7 +110,7 @@ class AuthController {
 
         // Render a la vista
         $router->render('auth/registro', [
-            'titulo' => 'Crear cuenta',
+            'titulo' => 'Crea tu cuenta en DevWebcamp',
             'usuario' => $usuario, 
             'alertas' => $alertas
         ]);
@@ -123,6 +131,7 @@ class AuthController {
 
                     // Generar un nuevo token
                     $usuario->crearToken();
+                    
                     unset($usuario->password2);
 
                     // Actualizar el usuario
@@ -146,9 +155,10 @@ class AuthController {
             }
         }
 
+
         // Muestra la vista
         $router->render('auth/olvide', [
-            'titulo' => 'Restablecer contraseña',
+            'titulo' => 'Olvide mi Password',
             'alertas' => $alertas
         ]);
     }
@@ -190,7 +200,7 @@ class AuthController {
 
                 // Redireccionar
                 if($resultado) {
-                    header('Location: /');
+                    header('Location: /login');
                 }
             }
         }
@@ -233,7 +243,7 @@ class AuthController {
             // Guardar en la BD
             $usuario->guardar();
 
-            Usuario::setAlerta('exito', 'Cuenta Comprobada Correctamente');
+            Usuario::setAlerta('exito', 'Cuenta Comprobada éxitosamente');
         }
 
      

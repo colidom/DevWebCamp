@@ -2,7 +2,7 @@
     <div class="footer__grid">
         <div class="footer__contenido">
             <h3 class="footer__logo">
-                &#60;DebWebcamp />
+                &#60;DevWebCamp />
             </h3>
 
             <p class="footer__texto">
@@ -10,23 +10,23 @@
             </p>
         </div>
 
-        <nav class="menu-redes">
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/colidom">
+        <nav class="menu-redes"> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://facebook.com/C%C3%B3digo-Con-Juan-103341632130628">
                 <span class="menu-redes__ocultar">Facebook</span>
-            </a>
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/colidom">
+            </a> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://twitter.com/codigoconjuan">
                 <span class="menu-redes__ocultar">Twitter</span>
-            </a>
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/colidom">
+            </a> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://youtube.com/codigoconjuan">
                 <span class="menu-redes__ocultar">YouTube</span>
-            </a>
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/colidom">
+            </a> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://instagram.com/codigoconjuan">
                 <span class="menu-redes__ocultar">Instagram</span>
-            </a>
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@colidom">
+            </a> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://tiktok.com/@codigoconjuan">
                 <span class="menu-redes__ocultar">Tiktok</span>
-            </a>
-            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/colidom">
+            </a> 
+            <a class="menu-redes__enlace" rel="noopener noreferrer" target="_blank" href="https://github.com/codigoconjuan">
                 <span class="menu-redes__ocultar">Github</span>
             </a>
         </nav>
